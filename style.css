@@ -1,0 +1,16 @@
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+button img {
+    width: 100%;
+}
+.pause {
+    background-image: url(img/pause-svgrepo-com.svg);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+   

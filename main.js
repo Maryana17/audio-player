@@ -2,31 +2,17 @@ const audio = document.querySelector('audio');
 const playBtn = document.querySelector('.play-btn');
 let isPlay = false;
 
-/*function playAudio() {
-  if(!isPlay){
-    audio.play();
-  }else{
-    audio.pause();
-  }
-}
-function pauseAudio() {
-  audio.pause();
-}
-playBtn.addEventListener('click', playAudio)
-pauseBtn.addEventListener('click', pauseAudio)
-*/
-
-playBtn.addEventListener('click', () => {
+function playAudio() {
     if(!isPlay){
         audio.play();
         isPlay = true;
-        
+        playBtn.classList.toggle('pause');
       } else {
         audio.pause();
         isPlay = false;
+        playBtn.classList.toggle('pause');
      }
-})
-function toggleBtn() {
-    playBtn.classList.toggle('pause');
-  }
-  playBtn.addEventListener('click', toggleBtn);
+}
+
+playBtn.addEventListener('click', playAudio)
+
